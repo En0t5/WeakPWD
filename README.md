@@ -10,6 +10,8 @@
 python3 WeakPWD.py -keys keyword
 
 python3 WeakPWD.py -keys key1,key2
+
+python3 WeakPWD.py -keys key -w passwd-top1000.txt
 ```
 
 
