@@ -173,6 +173,7 @@
 %username%@163
 %username%@163.com
 %username%163
+%username%@QAZ
 %username%@1996
 %username%@1997
 %username%@1998
@@ -202,6 +203,7 @@
 %username%@2022
 %username%@2023
 %username%@2024
+%username%@2025
 %username%2008
 %username%2009
 %username%2010
@@ -219,6 +221,7 @@
 %username%2022
 %username%2023
 %username%2024
+%username%2025
 %username%!
 %username%!!
 %username%!!!
@@ -227,6 +230,7 @@
 %username%!@#$
 %username%!@#$%
 %username%qwer123
+%username%qwer1234
 %username%.
 %username%..
 %username%...
@@ -243,6 +247,7 @@
 %username%#test#
 %username%c%username%c
 %username%%username%
+%username%@%username%
 %username%_123
 %username%168
 %username%668
