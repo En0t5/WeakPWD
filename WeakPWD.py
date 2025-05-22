@@ -23,12 +23,23 @@ def replace_keywords_in_file(keywords, dict_file=None):
         with open('rule.txt', 'r') as file:
             template_content = file.read()
 
+        # 先收集所有变体到一个集合中去重
+        all_variants = set()
+        for keyword in keywords:
+            # 保留原始形式和生成其他变体形式
+            variants = [
+                keyword,  # 原始形式
+                keyword.capitalize(),  # 首字母大写
+                keyword.lower(),  # 全小写
+                keyword.upper()  # 全大写
+            ]
+            all_variants.update(variants)
+
         # 生成最终内容
         final_content = []
-
-        # 对每个关键字进行替换
-        for keyword in keywords:
-            replaced_content = template_content.replace('%username%', keyword)
+        # 对去重后的变体统一生成密码
+        for variant in all_variants:
+            replaced_content = template_content.replace('%username%', variant)
             final_content.append(replaced_content.rstrip())  # 移除每个内容末尾的空白字符
 
         # 如果提供了字典文件，读取并合并内容
